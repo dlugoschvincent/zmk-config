@@ -17,23 +17,16 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
 include:
-  # Chocofi Left
+  # Fifi Left
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
-    artifact-name: chocofi_left
-  # Chocofi Right
+    shield: corne_left
+    artifact-name: fifi_left
+  # Fifi Right
   - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view_custom
-    artifact-name: chocofi_right
-  # Chocofi Reset
+    shield: corne_right
+    artifact-name: fifi_right
+  # Fifi Reset
   - board: nice_nano_v2
     shield: settings_reset
-    artifact-name: chocofi_settings_reset
-  # ZMK Studio enabled builds
-  # - board: nice_nano_v2
-  #   shield: corne_left nice_view_adapter nice_view
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  #   artifact-name: corne_left_studio
+    artifact-name: fifi_settings_reset

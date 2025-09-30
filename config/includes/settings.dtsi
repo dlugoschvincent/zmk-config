@@ -1,9 +1,3 @@
-#if defined(NICE_VIEW_SPI)
-&nice_view_spi {
-    cs-gpios = <NICE_VIEW_SPI>;
-};
-#endif
-
 &mt {
   tapping-term-ms = <200>;
 };
@@ -13,4 +7,3 @@
   tapping-term-ms = <200>;
   quick-tap-ms = <175>;
 };
-
