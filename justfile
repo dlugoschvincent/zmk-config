@@ -33,7 +33,6 @@ update:
   conclusion=$(jq -r '.[0].conclusion' build/status.json)
   build={{BUILD_DIR}}/firmware_$id
 
-
   if [[ "$status" == "completed" ]]; then
     if [[ "$conclusion" != "success" ]]; then
       fail "Build failed with '$conclusion'"
@@ -54,7 +53,7 @@ _flash name: update
   {{SETUP}}
 
   id=$(jq -r '.[0].databaseId' build/status.json)
-  firmware={{BUILD_DIR}}/firmware_$id/chocofi_{{name}}.uf2
+  firmware={{BUILD_DIR}}/firmware_$id/fifi_{{name}}.uf2
   dest=/run/media/$USER/NICENANO/
 
   [[ -f $firmware ]] || fail "Firmware file $firmware not found!"
@@ -75,7 +74,4 @@ svg:
   {{SETUP}}
 
   keymap -c svg/config.yml parse -z config/corne.keymap > svg/corne.yaml
-  keymap -c svg/config.yml draw -k chocofi -l LAYOUT svg/corne.yaml > svg/corne.svg
-
-
-
+  keymap -c svg/config.yml draw -k fifi -l LAYOUT svg/corne.yaml > svg/corne.svg
