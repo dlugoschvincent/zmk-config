@@ -161,7 +161,7 @@
   &kp ESC   &kp Q     &kp W     &kp E     &kp R                           ___   ___   ___   ___   ___
   &kp LSHFT &kp A     &kp S     &kp D     &kp F                           ___   ___   ___   ___   ___
   &kp LCTRL &kp Z     &kp X     &kp C     &kp V                           ___   ___   ___   ___   ___
-                      ___       ___       &lt ADJUST SPACE                  ___   ___   ___
+                      &kp TAB   &kp ESC   &lt ADJUST SPACE                  ___   ___   ___
       >;
     };
 
