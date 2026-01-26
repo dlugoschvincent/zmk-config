@@ -29,13 +29,12 @@
 #include "includes/morphs.dtsi"
 #include "includes/settings.dtsi"
 
-
 / {
 
   chosen {
       zmk,matrix_transform = &five_column_transform;
   };
- 
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -108,10 +107,10 @@
 //    ╰─────┴────┴────┼────┼──────┼───┬───┼───┼──────┼───────┴──────┴──────╯
 //                    │    │      │   │   │   │      │
 //                    ╰────┴──────┴───┴───┴───┴──────╯
-  &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               ___   ___         ___         ___        ___
-  &kp F11   &kp F4   &kp F5   &kp F6   &tog GAME               ___   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
-  &kp F10   &kp F1   &kp F2   &kp F3   ___                     ___   ___         ___         ___        ___
-                              ___      ___         ___   ___   ___   ___
+  &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               &tog GAME   ___         ___         ___        ___
+  &kp F11   &kp F4   &kp F5   &kp F6   ___                     ___         &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
+  &kp F10   &kp F1   &kp F2   &kp F3   ___                     ___         ___         ___         ___        ___
+                              ___      ___         ___   ___   ___         ___
       >;
     };
 
@@ -138,8 +137,8 @@
       display-name = "Game";
       bindings = <
 //    Left side: shifted right by 1; free column = ESC/SHIFT/CTRL; Space on left inner thumb.
-//    Right side: passthrough for now.
-  &kp ESC   &kp Q     &kp W     &kp E     &kp R                           ___   ___   ___   ___   ___
+//    Right side: passthrough (with an exit toggle).
+  &kp ESC   &kp Q     &kp W     &kp E     &kp R                           &tog GAME   ___   ___   ___   ___
   &kp LSHFT &kp A     &kp S     &kp D     &kp F                           ___   ___   ___   ___   ___
   &kp LCTRL &kp Z     &kp X     &kp C     &kp V                           ___   ___   ___   ___   ___
                       &kp TAB   &kp ESC   &kp SPACE                       ___   ___   ___
@@ -168,9 +167,9 @@
   // empty_layer {
   //   display-name = "Empty";
   //   bindings = <
-  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
-  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
-  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___ 
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___
+  //  ___   ___   ___   ___   ___                     ___   ___   ___   ___   ___
   //                          ___   ___   ___   ___   ___   ___
   //   >;
   // };
