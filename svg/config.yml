@@ -148,6 +148,7 @@ parse_config:
     "&bootloader": "💾"
     "&sys_reset": "🔄"
     "&reset_td": "🔄"
+    "&tog GAME": "🎮"
     "&studio_unlock": "🔓"
     "&dot_spc": ".⎵⇧"
     "&to 0": ""

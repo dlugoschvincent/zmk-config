@@ -8,9 +8,9 @@
 #define LOWER 1
 #define RAISE 2
 #define FUN   3
-#define ADJUST 4
-#define MOUSE 5
-#define GAME  6
+#define MOUSE 4
+#define GAME  5
+#define ADJUST 6
 
 // Keys
 #define MEH LC(LS(LALT))
@@ -109,28 +109,9 @@
 //                    │    │      │   │   │   │      │
 //                    ╰────┴──────┴───┴───┴───┴──────╯
   &kp F12   &kp F7   &kp F8   &kp F9   &kp PSCRN               ___   ___         ___         ___        ___
-  &kp F11   &kp F4   &kp F5   &kp F6   ___                     ___   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
+  &kp F11   &kp F4   &kp F5   &kp F6   &tog GAME               ___   &kp LSHFT   &kp LCTRL   &kp LALT   &kp RGUI
   &kp F10   &kp F1   &kp F2   &kp F3   ___                     ___   ___         ___         ___        ___
                               ___      ___         ___   ___   ___   ___
-      >;
-    };
-
-    adjust_layer {
-      display-name = "Adjust";
-      bindings = <
-//    ╭────┬───┬───┬───┬───╮        ╭──────┬──────┬──────┬───┬────╮
-//    │ 🔄 │   │   │   │   │        │  🔌  │  🔅  │  🔆  │   │ 🔄 │
-//    ├────┼───┼───┼───┼───┤        ├──────┼──────┼──────┼───┼────┤
-//    │    │   │   │   │   │        │  🔇  │  🔉  │  🔊  │   │    │
-//    ├────┼───┼───┼───┼───┤        ├──────┼──────┼──────┼───┼────┤
-//    │ 💾 │   │   │   │   │        │ 🛜❌ │ 🛜🔽 │ 🛜🔼 │   │ 💾 │
-//    ╰────┴───┴───┼───┼───┼───┬────┼──────┼──────┼──────┴───┴────╯
-//                 │   │   │   │ ⏯️ │  ⏮️  │  ⏭️  │
-//                 ╰───┴───┴───┴────┴──────┴──────╯
-  &sys_reset    &tog GAME   ___   ___   ___               &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   ___   &sys_reset
-  ___           ___   ___   ___   ___                    &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   ___   ___
-  &bootloader   ___   ___   ___   ___                    &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     ___   &bootloader
-                            ___   ___   ___   &kp C_PP   &kp C_PREV          &kp C_NEXT
       >;
     };
 
@@ -161,7 +142,26 @@
   &kp ESC   &kp Q     &kp W     &kp E     &kp R                           ___   ___   ___   ___   ___
   &kp LSHFT &kp A     &kp S     &kp D     &kp F                           ___   ___   ___   ___   ___
   &kp LCTRL &kp Z     &kp X     &kp C     &kp V                           ___   ___   ___   ___   ___
-                      &kp TAB   &kp ESC   &lt ADJUST SPACE                  ___   ___   ___
+                      &kp TAB   &kp ESC   &kp SPACE                       ___   ___   ___
+      >;
+    };
+
+    adjust_layer {
+      display-name = "Adjust";
+      bindings = <
+//    ╭────┬───┬───┬───┬───╮        ╭──────┬──────┬──────┬───┬────╮
+//    │ 🔄 │   │   │   │   │        │  🔌  │  🔅  │  🔆  │   │ 🔄 │
+//    ├────┼───┼───┼───┼───┤        ├──────┼──────┼──────┼───┼────┤
+//    │    │   │   │   │   │        │  🔇  │  🔉  │  🔊  │   │    │
+//    ├────┼───┼───┼───┼───┤        ├──────┼──────┼──────┼───┼────┤
+//    │ 💾 │   │   │   │   │        │ 🛜❌ │ 🛜🔽 │ 🛜🔼 │   │ 💾 │
+//    ╰────┴───┴───┼───┼───┼───┬────┼──────┼──────┼──────┴───┴────╯
+//                 │   │   │   │ ⏯️ │  ⏮️  │  ⏭️  │
+//                 ╰───┴───┴───┴────┴──────┴──────╯
+  &sys_reset    ___   ___   ___   ___                    &ext_power EP_TOG   &kp C_BRI_DN   &kp C_BRI_UP   ___   &sys_reset
+  ___           ___   ___   ___   ___                    &kp C_MUTE          &kp C_VOL_DN   &kp C_VOL_UP   ___   ___
+  &bootloader   ___   ___   ___   ___                    &bt BT_CLR          &bt BT_PRV     &bt BT_NXT     ___   &bootloader
+                            ___   ___   ___   &kp C_PP   &kp C_PREV          &kp C_NEXT
       >;
     };
 
