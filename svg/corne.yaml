@@ -150,7 +150,7 @@ layers:
   - {type: held}
   Adjust:
   - 🔄
-  - {t: ' ', type: trans}
+  - {t: Game, h: toggle}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -187,6 +187,43 @@ layers:
   - ⏭️
   Mouse: ['', '', '', '', '', 🖱️ ⇐, 🖱️ ⇊, 🖱️ ⇈, 🖱️ ⇒, '', ⌘, ⌥, ⌃, ⇧, '', 🖱️ ←, 🖱️ ↓, 🖱️ ↑, 🖱️ →, '', '', '', '', '', '', '', ⇟, ⇞, '', '', '', '', '', 🖱️L, 🖱️R,
     🖱️M]
+  Game:
+  - ⎋
+  - Q
+  - W
+  - E
+  - R
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ⇧
+  - A
+  - S
+  - D
+  - F
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ⌃
+  - Z
+  - X
+  - C
+  - V
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ⎵, h: Adjust}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
 combos:
 - p: [13, 16]
   k: 🔠
