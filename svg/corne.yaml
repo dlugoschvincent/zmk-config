@@ -117,7 +117,7 @@ layers:
   - F8
   - F9
   - 🖨️
-  - {t: ' ', type: trans}
+  - 🎮
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
@@ -126,7 +126,7 @@ layers:
   - F4
   - F5
   - F6
-  - 🎮
+  - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - ⇧
   - ⌃
@@ -156,7 +156,7 @@ layers:
   - W
   - E
   - R
-  - {t: ' ', type: trans}
+  - 🎮
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
