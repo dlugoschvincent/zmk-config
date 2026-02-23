@@ -19,14 +19,14 @@
 #
 include:
   # Fifi Left
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: corne_left
     artifact-name: fifi_left
   # Fifi Right
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: corne_right
     artifact-name: fifi_right
   # Fifi Reset
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: fifi_settings_reset
