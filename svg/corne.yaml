@@ -151,38 +151,38 @@ layers:
   Mouse: ['', '', '', '', '', 🖱️ ⇐, 🖱️ ⇊, 🖱️ ⇈, 🖱️ ⇒, '', ⌘, ⌥, ⌃, ⇧, '', 🖱️ ←, 🖱️ ↓, 🖱️ ↑, 🖱️ →, '', '', '', '', '', '', '', ⇟, ⇞, '', '', '', '', '', 🖱️L, 🖱️R,
     🖱️M]
   Game:
-  - ⎋
   - Q
   - W
   - E
   - R
+  - T
   - 🎮
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - ⇧
   - A
   - S
   - D
   - F
+  - G
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - ⌃
   - Z
   - X
   - C
   - V
+  - B
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - ⇥
-  - ⎋
+  - ⇧
+  - ⌃
   - ⎵
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
