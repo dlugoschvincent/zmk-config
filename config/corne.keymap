@@ -136,12 +136,12 @@
     gaming_layer {
       display-name = "Game";
       bindings = <
-//    Left side: shifted right by 1; free column = ESC/SHIFT/CTRL; Space on left inner thumb.
+//    Left side: standard QWERTY. Left two thumb keys are Shift/Ctrl; Space on left inner thumb.
 //    Right side: passthrough (with an exit toggle).
-  &kp ESC   &kp Q     &kp W     &kp E     &kp R                           &tog GAME   ___   ___   ___   ___
-  &kp LSHFT &kp A     &kp S     &kp D     &kp F                           ___   ___   ___   ___   ___
-  &kp LCTRL &kp Z     &kp X     &kp C     &kp V                           ___   ___   ___   ___   ___
-                      &kp TAB   &kp ESC   &kp SPACE                       ___   ___   ___
+  &kp Q     &kp W     &kp E     &kp R     &kp T                           &tog GAME   ___   ___   ___   ___
+  &kp A     &kp S     &kp D     &kp F     &kp G                           ___   ___   ___   ___   ___
+  &kp Z     &kp X     &kp C     &kp V     &kp B                           ___   ___   ___   ___   ___
+                      &kp LSHFT &kp LCTRL &kp SPACE                       ___   ___   ___
       >;
     };
 
