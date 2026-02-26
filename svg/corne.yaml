@@ -181,8 +181,8 @@ layers:
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
-  - ⇧
-  - ⌃
+  - {t: ⇥, h: ⇧}
+  - {t: ⎋, h: ⌃}
   - ⎵
   - {t: ' ', type: trans}
   - {t: ' ', type: trans}
